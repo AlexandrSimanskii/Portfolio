@@ -2,29 +2,49 @@
   display: flex;
   align-items: center;
   padding: 0 9%;
-}
-.home-content {
-  max-width: 60rem;
+  // background: url(/src/images/20221110_140207.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
 
-  & h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
+  &-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+
+    transition: 2s;
+    &:hover {
+      background-color: var(--bg-color);
+      opacity: 0.8;
+    }
   }
-}
-.home-content .text-animate {
-  position: relative;
-  width: 32, 8rem;
-}
-.home-content .text-animate h3 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 0.7px var(--main-color);
-}
-.home-content p {
-  font-size: 1.6rem;
-  margin: 2rem 0 4rem;
+
+  &-content {
+    max-width: 60rem;
+
+    & h1 {
+      font-size: 5.6rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    & .text-animate {
+      position: relative;
+      width: 32, 8rem;
+    }
+    & .text-animate h3 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 0.7px var(--main-color);
+    }
+    & p {
+      font-size: 1.6rem;
+      margin: 2rem 0 4rem;
+    }
+  }
 }
 .btn-box {
   position: relative;
@@ -32,39 +52,92 @@
   justify-content: space-between;
   width: 34.5rem;
   height: 5rem;
-}
-.btn-box .btn {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 16rem;
-  height: 100%;
-  background-color: var(--main-color);
-  border: 0.2rem solid var(--main-color);
-  border-radius: 0.8rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  color: var(--bg-color);
-  z-index: 1;
-  overflow: hidden;
-}
-.btn-box .btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--bg-color);
-  z-index: -1;
-  transition: 1s;
-}
-.btn-box .btn:hover::before {
-  width: 100%;
-  
-}.btn-box .btn:hover {
-   color: var(--main-color);
-    
+
+  & .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 100%;
+    background-color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: inset 0 0 3px 0 black;
+
+    &:nth-child(2) {
+      background-color: var(--bg-color);
+      color: var(--main-color);
+      transition: 1s;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--main-color);
+        z-index: -1;
+        
+      }
+      &:hover::after {
+        width: 100%;
+        background-color: var(--main-color);
+        z-index: -1;
+        transition: 1s;
+
+      }
+      &:hover{color: var(--bg-color);}
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: var(--bg-color);
+      z-index: -1;
+      transition: 1s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &:hover {
+      color: var(--main-color);
+    }
   }
+}
+.home__sci {
+  position: absolute;
+  bottom: 4rem;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  & a {
+    position: relative;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+
+    &:hover {
+      opacity: 0.5;
+      top: -1.5px;
+      transition: 0.5s;
+    }
+  }
+  & img {
+    width: 40px;
+    height: 40px;
+  }
+}

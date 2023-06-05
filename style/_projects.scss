@@ -1,0 +1,86 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  &-column {
+    max-width: 50%;
+    & .title {
+      font-size: 2.5rem;
+      margin: 2rem 0 1.5rem 2rem;
+    }
+  }
+  &-box {
+    border-left: 0.2rem solid var(--main-color);
+  }
+  &-contents {
+    position: relative;
+    padding-left: 2rem;
+  }
+  &-content {
+    position: relative;
+    padding: 1.5rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+   
+    & h3 {
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 1.6rem;
+      padding-top: 0.5rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.2rem;
+      left: -3.3rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--main-color);
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: var(--second-bg-color);
+      z-index: -1;
+      transition: 1s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  &-month {
+    display: flex;
+    align-items: end;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: 1.5rem;
+    & img {
+      margin-right: 0.5rem;
+    }
+  }
+}
+// .project-content::before{
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 19px;
+//   height: 190px;
+//   background-color: aqua;
+// }
