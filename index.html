@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    
+
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
     <header class="header">
-      <!-- <a href="#" class="logo">Александр</a> -->
-      <img id="menu-icons" src="/src/images/icons/icons8-menu-50.png" alt="" />
+      <a href="#" class="logo"
+        >Александр. <span class="animate" style="--i: 1"></span>
+      </a>
+
+      <div id="menu-icons" class="menu-icons">
+        <img src="/src/images/icons/icons8-menu-50.png" alt="" />
+        <span class="animate" style="--i: 2"></span>
+      </div>
+
       <nav class="navbar">
         <a href="#home" class="active">Главная</a>
         <a href="#about">Обо мне</a>
         <a href="#project">Проекты</a>
         <a href="#skills">Навыки</a>
         <a href="#contact">Контакты</a>
+        <span></span>
+        <span class="animate" style="--1: 2"></span>
       </nav>
     </header>
     <main>
-      <section id="home" class="home">
+      <section id="home" class="home show-animate">
         <div class="home-content">
           <h1>Привет, я <span>Симанский Александр</span></h1>
           <div class="text-animate">
@@ -77,7 +86,7 @@
         <h2 class="heading">Мои <span>Проекты</span></h2>
         <div class="project-row">
           <div class="project-column">
-            <h3 class="title">Навыки</h3>
+            <h3 class="title">Проекты</h3>
             <div class="project-box">
               <div class="project-contents">
                 <div class="project-content">

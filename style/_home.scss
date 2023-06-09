@@ -13,7 +13,6 @@
     right: 0;
     width: 45%;
     height: 100%;
-
     transition: 2s;
     &:hover {
       background-color: var(--bg-color);
@@ -32,13 +31,15 @@
 
     & .text-animate {
       position: relative;
-      width: 32, 8rem;
+      
     }
     & .text-animate h3 {
       font-size: 3.2rem;
       font-weight: 700;
+      
       color: transparent;
-      -webkit-text-stroke: 0.7px var(--main-color);
+      -webkit-text-stroke: 0.6px var(--main-color);
+      
     }
     & p {
       font-size: 1.6rem;
@@ -84,16 +85,16 @@
         height: 100%;
         background: var(--main-color);
         z-index: -1;
-        
       }
       &:hover::after {
         width: 100%;
         background-color: var(--main-color);
         z-index: -1;
         transition: 1s;
-
       }
-      &:hover{color: var(--bg-color);}
+      &:hover {
+        color: var(--bg-color);
+      }
     }
 
     &::before {

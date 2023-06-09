@@ -6,19 +6,37 @@
   padding: 2rem 9%;
   background-color: transparent;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   z-index: 100;
   transition: 1s;
+
   &-sticky {
     background-color: var(--bg-color);
   }
+  & .menu-icons {
+    width: 3.6rem;
+    height: 3.6rem;
+    position: relative;
+
+    display: none;
+    & img {
+      color: var(--text-color);
+      cursor: pointer;
+    }
+  }
 }
 .logo {
+  position: relative;
   font-size: 2.5rem;
   color: var(--text-color);
   font-weight: 600;
 }
+
+.navbar {
+  position: relative;
+}
+
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -29,10 +47,4 @@
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
-}
-#menu-icons {
-  max-width: 3.6rem;
-  color: var(--text-color);
-  cursor: pointer;
-  display: none;
 }
