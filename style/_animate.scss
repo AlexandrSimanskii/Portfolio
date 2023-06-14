@@ -1,16 +1,43 @@
 .animate {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-color);}
+  background-color: greenyellow;
+  z-index: 2;
+}
+
 .logo .animate,
 .navbar .animate,
-.menu-icons .animate {
-  animation: showRight 1s ease forwards;
-  animation-delay: calc(0.3s * var(--i));
+.menu-icons .animate,
+.home.show-animate .animate {
+  animation: showRight 1.2s ease forwards;
+  // animation-delay: calc(0.3s / var(--i));
+  
 }
+
+.animate.scroll {
+  transition: 1s ease;
+  // animation-delay: calc(0.3s * var(--i));
+  animation-delay: 40s;
+
+  // animation: none;
+}
+.project-box .animate.scroll {
+  width: 102%;
+}
+
+.skills.show-animate .animate.scroll,
+.about.show-animate .animate.scroll,
+.project.show-animate .animate.scroll,
+.project.show-animate .project-box .animate.scroll,
+.contact.show-animate .animate.scroll {
+  // animation-delay: calc(0.3s * var(--i));
+  animation-delay: 40s;
+  width: 0;
+}
+
 @keyframes showRight {
   100% {
     width: 0;

@@ -2,6 +2,11 @@
   min-height: auto;
   max-width: 100%;
   padding-bottom: 7rem;
+  & .heading{
+    display: inline-block;
+    left: 50%;
+    transform: translatex(-50%);
+  }
   & form {
 
     max-width: 70rem;

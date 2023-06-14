@@ -19,6 +19,10 @@ let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header nav a");
 
 window.onscroll = () => {
+  let test = document.querySelectorAll(".about.show-animate .animate.scroll")
+  test.forEach((elem) => {
+    console.log(elem);
+  });
   let header = document.querySelector(".header");
   header.classList.toggle("header-sticky", window.scrollY > 100);
 
@@ -39,7 +43,9 @@ window.onscroll = () => {
 
       // add style:show-animation for section on skroll
       sec.classList.add("show-animate");
-    }else{sec.classList.remove("show-animate");}
+    } else {
+      sec.classList.remove("show-animate");
+    }
   });
 };
 
@@ -49,3 +55,4 @@ navLinks.forEach((a) => {
     menuIcon.src = "/src/images/icons/icons8-menu-50.png";
   });
 });
+let test = document.querySelectorAll(".about.show-animate .animate.scroll");
