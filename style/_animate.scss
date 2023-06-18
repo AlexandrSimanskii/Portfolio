@@ -4,25 +4,34 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: greenyellow;
+  background-color: var(--bg-color);
   z-index: 2;
 }
+.about .animate,
+.skills .animate {
+  width: 100%;
+
+  background-color: var(--second-bg-color);
+
+}
+
+// section:nth-child(odd) {
+ 
+// }
 
 .logo .animate,
 .navbar .animate,
 .menu-icons .animate,
 .home.show-animate .animate {
   animation: showRight 1.2s ease forwards;
-  // animation-delay: calc(0.3s / var(--i));
-  
+  animation-delay: calc(0.3s / var(--i));
 }
 
 .animate.scroll {
   transition: 1s ease;
-  // animation-delay: calc(0.3s * var(--i));
-  animation-delay: 40s;
+  transition-delay: calc(0.2s / var(--i));
 
-  // animation: none;
+  animation: none;
 }
 .project-box .animate.scroll {
   width: 102%;
@@ -33,8 +42,7 @@
 .project.show-animate .animate.scroll,
 .project.show-animate .project-box .animate.scroll,
 .contact.show-animate .animate.scroll {
-  // animation-delay: calc(0.3s * var(--i));
-  animation-delay: 40s;
+  transition-delay: calc(0.3s * var(--i));
   width: 0;
 }
 
