@@ -140,5 +140,9 @@ section {
     flex-direction: column;
     text-align: center;
   }
- 
+}
+@media (max-width: 321px) {
+  .home__sci {
+    bottom: 2rem;
+  }
 }
