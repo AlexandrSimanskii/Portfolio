@@ -41,6 +41,10 @@
     & a {
       font-weight: 700;
       color: var(--text-color);
+      &:visited {
+        font-weight: 700;
+        color: var(--text-color);
+      }
     }
     & p {
       font-size: 1.6rem;

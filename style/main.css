@@ -350,6 +350,10 @@ section {
   font-weight: 700;
   color: var(--text-color);
 }
+.project-content a:visited {
+  font-weight: 700;
+  color: var(--text-color);
+}
 .project-content p {
   font-size: 1.6rem;
   padding-top: 0.5rem;
