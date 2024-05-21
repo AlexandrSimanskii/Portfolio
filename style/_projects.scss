@@ -34,8 +34,13 @@
     border-radius: 0.6rem;
     margin-bottom: 2rem;
 
-    & h3 {
+    & h3,
+    a {
       font-size: 2rem;
+    }
+    & a {
+      font-weight: 700;
+      color: var(--text-color);
     }
     & p {
       font-size: 1.6rem;

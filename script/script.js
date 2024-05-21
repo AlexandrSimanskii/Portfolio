@@ -20,9 +20,9 @@ let navLinks = document.querySelectorAll(".header nav a");
 
 window.onscroll = () => {
   let test = document.querySelectorAll(".about.show-animate .animate.scroll");
-  test.forEach((elem) => {
-    console.log(elem);
-  });
+  // test.forEach((elem) => {
+  //   console.log(elem);
+  // });
   let header = document.querySelector(".header");
   header.classList.toggle("header-sticky", window.scrollY > 100);
 
