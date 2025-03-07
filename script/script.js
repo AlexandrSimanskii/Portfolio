@@ -19,16 +19,12 @@ let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".header nav a");
 
 window.onscroll = () => {
-  let test = document.querySelectorAll(".about.show-animate .animate.scroll");
-  // test.forEach((elem) => {
-  //   console.log(elem);
-  // });
   let header = document.querySelector(".header");
-  header.classList.toggle("header-sticky", window.scrollY > 100);
+  header.classList.toggle("header-sticky", window.scrollY > 50);
 
   section.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 400;
+    let offset = sec.offsetTop - 300;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
@@ -58,4 +54,3 @@ navLinks.forEach((a) => {
 // let test = document.querySelectorAll(".about.show-animate .animate.scroll");
 
 // Animation footer on scroll !!!
-

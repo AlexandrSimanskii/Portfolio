@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 0 9%;
-  
+
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -28,16 +28,13 @@
       font-size: 5.6rem;
       font-weight: 700;
       line-height: 1.3;
-      
-      
     }
-& p{
-  position: relative;
-  display: inline-block;
-}
+    & p {
+      position: relative;
+      display: inline-block;
+    }
     & .text-animate {
       position: relative;
-      
     }
     & .text-animate h3 {
       font-size: 3.2rem;
@@ -45,14 +42,12 @@
       white-space: nowrap;
       color: transparent;
       -webkit-text-stroke: 0.6px var(--main-color);
-      
     }
     & p {
       font-size: 1.6rem;
       margin: 2rem 0 4rem;
     }
   }
-  
 }
 .btn-box {
   position: relative;
@@ -124,7 +119,6 @@
     }
   }
 }
-
 
 .home__sci {
   position: absolute;
