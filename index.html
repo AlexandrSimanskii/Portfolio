@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-
+    
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
@@ -49,13 +49,11 @@
           </p>
 
           <div class="btn-box">
-            <button  class="btn">Сотрудничать</button>
-            <button  class="btn">
-              Вопросы
-            </button>
+            <button class="btn">Сотрудничать</button>
+            <button class="btn">Вопросы</button>
             <span class="animate" style="--i: 5"></span>
           </div>
-          
+
           <div class="home__sci">
             <a target="_blank" href="https://github.com/AlexandrSimanskii"
               ><img src="src/images/icons/icons8-github-50.png" alt=""
@@ -344,10 +342,10 @@
           <div class="input-box">
             <div class="input-field">
               <input
-                name="phone"
-                type="number"
-                placeholder="Тел.номер"
-                required
+                id="phone"
+                type="tel"
+                placeholder="+7 (___) ___-__-__"
+                maxlength="18"
               />
               <span class="focus"></span>
               <span class="animate scroll" style="--i: 5"></span>
@@ -372,6 +370,7 @@
         </form>
       </section>
     </main>
+
     <script src="script/script.js"></script>
   </body>
 </html>
