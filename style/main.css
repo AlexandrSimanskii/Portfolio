@@ -393,6 +393,11 @@ section {
   margin-right: 0.5rem;
 }
 
+@media (max-width: 480px) {
+  .project-content {
+    max-width: 320px;
+  }
+}
 .skills {
   min-height: 100vh;
   padding-bottom: 7rem;
@@ -473,10 +478,13 @@ section {
   width: 70%;
 }
 .skills-column:nth-child(2) .skills-progress:nth-child(2) .bar span {
-  width: 90%;
+  width: 70%;
 }
 .skills-column:nth-child(2) .skills-progress:nth-child(3) .bar span {
   width: 75%;
+}
+.skills-column:nth-child(2) .skills-progress:nth-child(4) .bar span {
+  width: 85%;
 }
 
 .contact {

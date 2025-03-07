@@ -87,3 +87,13 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .project {
+    &-contents {
+    }
+    &-content {
+      max-width: 320px;
+    }
+  }
+}
