@@ -58,3 +58,4 @@ navLinks.forEach((a) => {
 // let test = document.querySelectorAll(".about.show-animate .animate.scroll");
 
 // Animation footer on scroll !!!
+
