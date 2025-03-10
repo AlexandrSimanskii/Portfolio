@@ -51,9 +51,8 @@ navLinks.forEach((a) => {
     menuIcon.src = "/src/images/icons/icons8-menu-50.png";
   });
 });
-// let test = document.querySelectorAll(".about.show-animate .animate.scroll");
 
-// Animation footer on scroll !!!
+//Add inputMask for phone
 
 const phoneInput = document.getElementById("phone");
 
@@ -79,4 +78,23 @@ phoneInput.addEventListener("keydown", function (e) {
 
     e.preventDefault();
   }
+});
+
+// showModal and hide
+
+const buttonGetModal = document.querySelectorAll(".open-modal");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".close-modal");
+
+buttonGetModal.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.style.display = "block";
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 5000);
+  });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
 });

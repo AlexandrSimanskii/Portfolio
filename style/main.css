@@ -90,18 +90,6 @@ section {
   background-position: left;
   background-size: cover;
 }
-.home-imgHover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45%;
-  height: 100%;
-  transition: 2s;
-}
-.home-imgHover:hover {
-  background-color: var(--bg-color);
-  opacity: 0.8;
-}
 .home-content {
   max-width: 60rem;
 }
@@ -143,6 +131,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 16rem;
+  cursor: pointer;
   height: 100%;
   background-color: var(--main-color);
   border: 0.2rem solid var(--main-color);
@@ -606,6 +595,39 @@ textarea {
     width: 0;
   }
 }
+.modal {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  top: 30px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.modal__title {
+  margin-bottom: 12px;
+}
+.modal__group {
+  display: flex;
+  gap: 20px;
+}
+.modal img {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
